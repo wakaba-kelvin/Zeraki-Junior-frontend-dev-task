@@ -1,0 +1,35 @@
+<div class="appbar-wrap">
+  <div class="appbar-content">
+    <div class="appbar-left">
+      <button type="button" class="sidebar-open-btn" (click)="openSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h3 class="appbar-title">Dashboard</h3>
+    </div>
+    <div class="appbar-right">
+      <div class="appbar-search">
+        <form action="">
+          <div class="input-group">
+            <span class="input-icon" (click)="handleInputControlVisibility()">
+              <img src="{{ icons[0] }}" class="input-icon-img" alt="" />
+            </span>
+            <input
+              #inputControlRef
+              type="text"
+              placeholder="Search here ..."
+              class="input-control"
+              [ngClass]="{'show-input-control': showInputControl}"
+            />
+          </div>
+        </form>
+      </div>
+      <app-barlang></app-barlang>
+      <button type="button" class="appbar-icon-btn">
+        <img src="{{ icons[0] }}" alt="" />
+        <span class="icon-btn-dot"></span>
+      </button>
+      <app-barprofile></app-barprofile>
+    </div>
+
+  </div>
+</div>

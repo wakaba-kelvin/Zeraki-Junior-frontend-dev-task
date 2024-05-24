@@ -1,0 +1,13 @@
+<!-- <p>invoices works!</p> -->
+<table>
+    <tr>
+        <th>School name</th>
+        <th>Amount due</th>
+        <th>Due date</th>
+    </tr>
+    <tr *ngFor="let invoice of invoices">
+        <td>{{invoice.schoolName}}</td>
+        <td>{{invoice.amountDue}}</td>
+        <td>{{invoice.dueDate}}</td>
+    </tr>
+</table>

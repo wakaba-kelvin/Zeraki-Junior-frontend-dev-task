@@ -1,0 +1,127 @@
+.block-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .sales-block {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
+  }
+  
+  .block-head .block-title {
+    margin-bottom: 4px;
+  }
+  
+  .export-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    height: 32px;
+    border: 1px solid var(--columbiaBlue); /* replace with actual color value */
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-weight: 600;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  @media (max-width: 1600px) {
+    .cards {
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards {
+      grid-template-columns: 100%;
+    }
+  }
+  
+  .card-item {
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  
+  @media (max-width: 1440px) {
+    .card-item {
+      padding: 14px 12px;
+    }
+  }
+  
+  .card-item.card-misty-rose {
+    background-color:#ffe2e5; 
+  }
+  
+  .card-item.card-misty-rose .card-item-icon {
+    background-color: #FA5A7D; 
+  }
+  
+  .card-item.card-latte {
+    background-color: #FFF4DE; 
+  }
+  
+  .card-item.card-latte .card-item-icon {
+    background-color: #ff947a;
+  }
+  
+  .card-item.card-nyanza {
+    background-color: #DCFCE7; /* replace with actual color value */
+  }
+  
+  .card-item.card-nyanza .card-item-icon {
+    background-color: #3CD856; /* replace with actual color value */
+  }
+  
+  .card-item.card-pale-purple {
+    background-color: #F3E8FF; /* replace with actual color value */
+  }
+  
+  .card-item.card-pale-purple .card-item-icon {
+    background-color: #A700FF; /* replace with actual color value */
+  }
+  
+  .card-item .card-item-icon {
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-item .card-item-icon img {
+    width: 22px;
+  }
+  
+  .card-item .card-item-value {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    color: var(--cadet); /* replace with actual color value */
+  }
+  
+  .card-item .card-item-text {
+    font-weight: 600;
+  }
+  
+  .card-item .card-item-sm-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blue); /* replace with actual color value */
+  }
+  

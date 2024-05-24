@@ -1,0 +1,7 @@
+.area-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: ; */
+    justify-content: space-between;
+    padding: 20px;
+}

@@ -1,0 +1,47 @@
+<div class="sales-block">
+    <div class="block-head">
+      <div class="block-head-l">
+        <h3>Today's Sales</h3>
+        <p class="text">Sales Summary</p>
+      </div>
+      <div class="block-head-r">
+        <button type="button" class="export-btn">
+          <img src="icons/export-dark.png" alt="" />
+          <span class="text">Export</span>
+        </button>
+      </div>
+    </div>
+    <div class="block-content">
+      <div class="cards">
+        <div class="card-item card-misty-rose">
+          <div class="card-item-icon">
+            <img src="icons/card-sales.png" alt="" />
+          </div>
+          <div class="card-item-value">${{ collections }}</div>
+          <p class="card-item-text text">Collections</p>
+        </div>
+        <div class="card-item card-latte">
+          <div class="card-item-icon">
+            <img src="icons/card-order.png" alt="" />
+          </div>
+          <div class="card-item-value">{{ signups }}</div>
+          <p class="card-item-text text">Sign ups</p>
+        </div>
+        <div class="card-item card-nyanza">
+          <div class="card-item-icon">
+            <img src="icons/card-product.png" alt="" />
+          </div>
+          <div class="card-item-value">${{ totalRevenue }}</div>
+          <p class="card-item-text text">Total revenue</p>
+        </div>
+        <div class="card-item card-pale-purple">
+          <div class="card-item-icon">
+            <img src="icons/card-customer.png" alt="" />
+          </div>
+          <div class="card-item-value">{{ bouncedCheques }}</div>
+          <p class="card-item-text text">Bounced Cheques</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

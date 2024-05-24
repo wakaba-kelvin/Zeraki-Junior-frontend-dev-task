@@ -1,0 +1,27 @@
+<!-- <p>school works!</p> -->
+<!-- <div *ngFor="let school of schools">
+    <h1>{{school.SchoolName}}</h1> <hr>
+    <h4>Contact Info</h4>
+    <p>{{school.ContactInfo}}</p>
+</div> -->
+
+<table>
+    <tr>
+        <th>School name</th>
+        <th>Balance</th>
+        <th>Collections</th>
+        <th>County</th>
+        <th>Product</th>
+        <th>Contact Info</th>
+        <th>Registration date</th>
+    </tr>
+    <tr *ngFor="let school of schools">
+        <td>{{school.SchoolName}}</td>
+        <td>{{school.balance}}</td>
+        <td>{{school.Collections}}</td>
+        <td>{{school.County}}</td>
+        <td>{{school.Product}}</td>
+        <td>{{school.ContactInfo}}</td>
+        <td>{{school.registrationDate}}</td>
+    </tr>
+</table>

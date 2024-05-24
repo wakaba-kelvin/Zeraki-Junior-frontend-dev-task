@@ -1,0 +1,27 @@
+<div class="appbar-dropdown lang-dropdown" #countryLangRef>
+  <div class="drop-selected" (click)="handleDroplistEnable()">
+    <div class="drop-selected-img">
+      <img *ngIf="selectedCountry?.flag" [src]="selectedCountry?.flag" alt="" />
+    </div>
+    <div class="drop-selected-text">
+      <span *ngIf="selectedCountry?.language">{{ selectedCountry?.language }}</span>
+      <img src="{{ icons[0] }}" class="drop-icon" alt="" />
+    </div>
+  </div>
+  <div class="drop-list" [ngClass]="{'show': isDroplistEnabled}">
+    <div *ngIf="loading">Data loading...</div>
+    <div class="drop-list-wrapper scrollbar" *ngIf="!loading">
+      <div *ngIf="">
+        <div class="drop-item"
+          >
+          <span class="drop-item-img">
+            <img [src]="" alt="" />
+          </span>
+          <span class="drop-item-text"></span>
+
+         </div>
+       </div>
+       <p *ngIf="countries?.length === 0">No data!</p>
+     </div>
+   </div>
+ </div>
