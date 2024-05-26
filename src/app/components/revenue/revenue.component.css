@@ -1,0 +1,6 @@
+/* revenue.component.css */
+.chart-container {
+    width: 85%; /* Chart container occupies 85% of the parent container */
+    height: 400px; /* Adjust the height as needed */
+  }
+  

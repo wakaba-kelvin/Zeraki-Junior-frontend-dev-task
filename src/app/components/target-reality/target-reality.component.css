@@ -1,0 +1,75 @@
+/* target-reality.component.css */
+
+.target-reality-wrap {
+    /* Apply BlockWrapStyles */
+    /* Add styles as needed */
+  }
+  
+  .bar-chart {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .block-foot .legend-info {
+    margin-top: 16px;
+  }
+  
+  .block-foot .legend-info-item {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .block-foot .legend-info-item:first-child .info-item-icon {
+    background-color: #e2fff3;
+  }
+  
+  .block-foot .legend-info-item:first-child .info-item-val {
+    color: var(--emerald);
+    font-weight: 600;
+  }
+  
+  .block-foot .legend-info-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .block-foot .legend-info-item:last-child .info-item-icon {
+    background-color: #fff4de;
+  }
+  
+  .block-foot .legend-info-item:last-child .info-item-val {
+    color: var(--orange);
+    font-weight: 600;
+  }
+  
+  .block-foot .legend-info-item .info-item-icon {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .block-foot .legend-info-item .info-item-icon img {
+    width: 20px;
+  }
+  
+  .block-foot .info-item-l {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+  
+  .block-foot .info-item-title {
+    font-size: 14px;
+    color: var(--cadet);
+  }
+  
+  .block-foot .info-item-subtitle {
+    font-size: 13px;
+    color: var(--ashgray);
+  }
+  
